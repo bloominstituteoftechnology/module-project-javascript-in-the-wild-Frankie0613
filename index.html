@@ -68,7 +68,9 @@
     // ❗ Notes
     // 🧠 Use ternary expressions to construct the string.
     const devGreet = (isFrontend, isHappy) => {
-      return 
+      isFrontend ? isFrontend = 'frontend' : isFrontend = 'backend'
+      isHappy ? isHappy = 'happy' : isHappy = 'sad'
+      return `Hey, I am a ${isFrontend} dev and I am ${isHappy}`
     }
 
     // 👉 CHALLENGE 4
