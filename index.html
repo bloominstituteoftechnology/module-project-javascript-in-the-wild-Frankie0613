@@ -108,7 +108,14 @@
     // 🧠 Split the string but do not use the reverse method of arrays. Let's do it manually.
     // 🧠 We suggest using a for loop. Research how to loop backwards over an array, starting at the last element.
     // 🧠 Use a ternary in the return statement.
-    const reverseString = () => {
+    const reverseString = (string) => {
+      let splitString = string.split('')
+      let newString = []
+      for (let i = splitString.length-1; i >= 0; i--) {
+        newString.push(splitString[i])
+      } 
+      joinedString = newString.join('')
+      return string === joinedString ? "It's a palindrome!" : joinedString
 
     }
 
